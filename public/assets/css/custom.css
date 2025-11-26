@@ -1,0 +1,309 @@
+.header-nav .nav > li > a, .header-nav .nav > li .mega-menu li a, .header-nav .nav > li .sub-menu li a{text-transform: uppercase !important;}
+.header-nav .nav > li .mega-menu, .header-nav .nav > li .sub-menu{width:  260px !important;}
+.first-character{
+    min-width: 40px;
+    color: #fefefe;
+    padding:  15px;
+}
+.testimonial-5 .testimonial-pic{
+    background: var(--gradient)
+}
+.testimonial-5:hover {
+    background: var(--primary-dark);
+}
+.wpcf7-form .input-group{display: block !important;}
+.fr-services .banner-four .banner-inner{min-height: 650px !important}
+.fr-services .service-form{
+    background-image: var(--gradient);
+    border-radius: 0.25rem;
+    padding: 40px 30px;
+}
+.fr-services .wpcf7-response-output{color: #fff !important;}
+.banner-four .banner-inner{padding-top:  100px !important}
+.banner-four .banner-inner .dz-media ul li:nth-child(3){
+    top: 0% !important;
+    left: 75% !important;
+}
+.fr-services .content-inner, .page-template-default .content-inner{padding-top : 75px !important}
+
+.single .dlab-blog .dlab-post-text ul li p {
+    margin: 0 !important;
+}
+.search-btn{
+    padding: 15px 30px !important;
+}
+.post-navigation.recent-posts-entry{
+    display: flex;
+}
+.post-navigation.recent-posts-entry .widget-post-bx .widget-post .dlab-media{
+    width: 60px;
+    min-width: 60px;
+}
+.post-navigation .arrow-box{    
+    font-size: 24px;
+    margin: 0 5px;
+}
+.comment-respond .comment-form p label{display: inline-block !important;}
+.comment-respond{
+    border: 1px solid #f5f5f5;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.comments-area {
+    margin-top: 40px;
+}
+.comment-form .comment-form-author, .comment-form .comment-form-email{
+    width: 50%;
+}
+.comment-form .comment-form-url, .comment-form .comment-form-cookies-consent{width: 100%;}
+.comment-form .form-submit .submit{
+    background: var(--gradient);
+    padding: 20px 35px;
+    display: inline-block;
+    border-radius: 0.25rem;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: none;
+    color: #fff
+}
+.comments-area .comment-list {
+    border: 1px solid #f5f5f5;
+    padding: 30px;
+}
+.icon-bx-wraper.style-10:hover .icon-bx{
+    border: 5px solid var(--primary);
+    border-radius: 50% 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+.why-choose-terms .icon-bx-wraper{min-height: 420px !important ;}
+.why-choose-health .icon-bx-wraper{min-height: 445px !important}
+.testimonials-carousel3 .owl-item .item .testimonial-5{min-height: 315px !important;}
+
+.citation-page .tagcloud a{
+    position: relative;
+    border: 1px solid;
+    border-radius: 0.25rem;
+    padding: 6px 15px;
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    font-size: 15px;
+    color: inherit;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: url('../images/bg2.webp');/* Add your image path */
+    background-size: cover;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--primary);
+    color: white;
+}
+/*
+table td {
+    background-color: var(--gradient);
+}*/
+
+table th:first-child,
+table td:first-child {
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+
+.quotes-page{padding-top: 150px;}
+.page-template-insurance-quotes .header{
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
+.policy-listing .quotes-list {
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin-top: 20px;
+}
+.quotes-list .mb-10{
+    margin-bottom: 10px;
+}
+/*.policy-listing .rounded {
+    border: 1px solid #ccc;
+    padding: 10px 0px;
+}*/
+/*.policy-listing .rounded img {
+    width: 100px;
+}*/
+.policy-listing .policy-detail .name {
+    font-weight: 600;
+    font-size: 14px;
+}
+.policy-listing .box-heading {
+    font-size: 13px !important;
+    color: #1987C8;
+    padding: 0 6px 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+.policy-listing span.limit {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+.important_links_section {
+    padding: 10px 0;
+    border-top: 1px dotted #000;
+    /*margin: 1.25rem 0 0 0;*/
+}
+.important_links ul {
+    display: inline-flex;
+    padding-left: 15px ;
+}
+.important_links .links_list li {
+    border-right: 2px solid #ccc;
+    line-height: 15px;
+    text-decoration: none;
+    padding-bottom: 0;
+}
+.important_links .links_list li:first-child a {
+    padding-left: 0;
+}
+.important_links .links_list li:last-child {
+    border-right: none;
+}
+.important_links ul li a {
+    font-size: 13px;
+    color: #1987C8;
+    padding: 0 6px 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+}
+.quotes-list .btn{
+    padding: 10px 8px !important;
+    font-size:  13px;
+}
+.quotes-nav{
+    background: #fff;
+    padding: 30px 30px;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.quotes-nav ul li{text-align: left !important;}
+.form-control{height: 45px !important;}
+.quotes-page .modal.show{z-index: 9999;}
+.quotes-page .side-bar{z-index: 1;}
+.quotes-page .sticky-top{top: 20px !important}
+.search-no-results input.search-field {
+       padding: 10px 10px 10px 20px;
+    height: 55px;
+    box-shadow: 1px 0 50px rgba(0, 0, 0, 0.1);
+    border: 0;
+    width: 300px;
+}
+.search-no-results input.search-submit {
+    padding: 18px 28px !important;
+    background-image: var(--gradient);
+    border: none;
+    color: #fff;
+    background-size: 200%;
+    border-color: transparent !important;
+    transition: all 0.5s;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.dlab-content h3 {
+    margin-top: 50px;
+}
+.page-template-terms-citation-pages .icon-bx-wraper.style-10:hover .icon-bx, .page-template-health-citation-pages .icon-bx-wraper.style-10:hover .icon-bx, .page-template-investment-citation-pages .icon-bx-wraper.style-10:hover .icon-bx, .page-template-terms-women-citation-pages .icon-bx-wraper.style-10:hover .icon-bx{    border-radius: 0% 0%;height: 100px;width: 150px;}
+.dlab-bnr-inr h1, .dlab-bnr-inr .h1{
+    font-size:  50px !important;
+}
+.dlab-page-text p, .dlab-blog.blog-single .dlab-post-text p{margin-bottom: 1em !important}
+
+.page-template-terms-citation-pages ul.list-check, .page-template-health-citation-pages ul.list-check, .page-template-investment-citation-pages ul.list-check, .page-template-terms-women-citation-pages ul.list-check{ margin-bottom: 10px; }
+
+.page-template-terms-citation-pages .tagcloud ul, .page-template-health-citation-pages .tagcloud ul, .page-template-investment-citation-pages .tagcloud ul, .page-template-terms-women-citation-pages .tagcloud ul{display: flex;flex-wrap: wrap;
+}
+.site-header{
+    z-index: 999 !important;
+}
+.quotesPartnerModal{
+    z-index: 9999999 !important;
+}
+.content-inner-3{padding-bottom:  0px !important}
+.clients-carousel.style-2 .owl-stage{padding:  0 !important}
+footer .copyright-text{color: #666 !important;}
+footer .widget {
+    margin-bottom: 0 !important;
+}
+.contact-us-btn{display: none;}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 15px;
+    right: 70px;
+    background-color: white;
+    color: #25D366;
+    border: 2px solid #25D366;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #25D366;
+    color: white;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.header-top{
+    background: #F26731;
+    padding: 5px 0;
+}
+.header-top .widget{margin: 0}
+
+.hero-benefits li {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-us-btn{display: block !important;} 
+    .content-inner-3{padding:0 !important ;}
+}
