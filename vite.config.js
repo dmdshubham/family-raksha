@@ -4,8 +4,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: ['health.familyraksha.com'],  // ✅ Add this line
-    port: 3004,
+    allowedHosts: ['familyraksha.com'],
+    port: 3007,
+    host: '0.0.0.0',
+    strictPort: true,
+  },
+  server: {
+    allowedHosts: ['familyraksha.com'],
+    port: 3007,
     host: '0.0.0.0',
   },
 })
