@@ -10,6 +10,9 @@ import TermsConditions from './pages/TermsConditions/TermsConditions';
 import GrievanceRedressal from './pages/GrievanceRedressal/GrievanceRedressal';
 import Blog from './pages/Blog/Blog';
 import ContactUs from './pages/ContactUs/ContactUs';
+import TermInsuranceQuotes from './pages/TermInsuranceQuotes/TermInsuranceQuotes';
+import HealthInsuranceQuotes from './pages/HealthInsuranceQuotes/HealthInsuranceQuotes';
+import InvestmentPlansQuotes from './pages/InvestmentPlansQuotes/InvestmentPlansQuotes';
 import './App.css';
 
 function App() {
@@ -27,6 +30,9 @@ function App() {
           <Route path="/grievance-redressal" element={<GrievanceRedressal />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/term-insurance-quotes" element={<TermInsuranceQuotes />} />
+          <Route path="/health-insurance-quotes" element={<HealthInsuranceQuotes />} />
+          <Route path="/investment-plans-quotes" element={<InvestmentPlansQuotes />} />
         </Routes>
       </Layout>
     </Router>

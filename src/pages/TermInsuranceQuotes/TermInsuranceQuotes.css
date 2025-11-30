@@ -1,0 +1,272 @@
+.quotes-page {
+  min-height: 100vh;
+}
+
+.quotes-page .banner-four {
+  padding: 60px 0;
+  position: relative;
+}
+
+.quotes-page .banner-four::before {
+  content: '';
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 182, 193, 0.3) 0%, rgba(255, 182, 193, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.quotes-page .container {
+  position: relative;
+  z-index: 1;
+}
+
+.quotes-nav {
+  background: #fff;
+  border-radius: 12px;
+  padding: 35px 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.quotes-nav .widget {
+  margin-bottom: 30px;
+}
+
+.quotes-nav .widget:last-child {
+  margin-bottom: 0;
+}
+
+.why-buy-widget {
+  padding: 0;
+}
+
+.why-buy-widget .widget-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #000;
+  border-left: 4px solid #7355f7;
+  padding-left: 15px;
+  line-height: 1.3;
+}
+
+.why-buy-widget .benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.why-buy-widget .benefits-list li {
+  padding: 12px 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.why-buy-widget .help-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.quotes-list {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+  border: 1px solid #f0f0f0;
+}
+
+.quotes-list:hover {
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+}
+
+.quotes-list .rounded img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.quotes-list .policy-detail .name {
+  display: block;
+  font-weight: 700;
+  color: #666;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.quotes-list .box-heading {
+  display: block;
+  font-size: 12px;
+  color: #0088cc;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.quotes-list .limit {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.quotes-list .btn-primary {
+  padding: 12px 25px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(115, 85, 247, 0.3);
+  transition: all 0.3s;
+  border: none;
+}
+
+.quotes-list .btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(115, 85, 247, 0.4);
+  transform: translateY(-2px);
+}
+
+.important_links_section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed #ddd;
+}
+
+.important_links .links_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.important_links .links_list a {
+  color: #0088cc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.important_links .links_list a:hover {
+  color: #006699;
+  text-decoration: underline;
+}
+
+.important_links .links_list .separator {
+  color: #999;
+  margin: 0 8px;
+}
+
+/* Modal Styles */
+.modal {
+  z-index: 1050;
+}
+
+.modal-dialog {
+  max-width: 800px;
+}
+
+.modal-header {
+  border-bottom: 2px solid #7355f7;
+  padding: 20px 30px;
+}
+
+.modal-header .insurer-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.modal-body .nav-tabs {
+  border-bottom: 2px solid #eee;
+  margin-bottom: 25px;
+}
+
+.modal-body .nav-tabs .nav-link {
+  border: none;
+  color: #666;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin-right: 10px;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s;
+}
+
+.modal-body .nav-tabs .nav-link:hover {
+  background: #f5f5f5;
+  color: #7355f7;
+}
+
+.modal-body .nav-tabs .nav-link.active {
+  background: #7355f7;
+  color: #fff;
+}
+
+.modal-body .wpb_wrapper {
+  color: #333;
+  line-height: 1.8;
+}
+
+.modal-body .wpb_wrapper h4 {
+  margin-bottom: 15px;
+  color: #7355f7;
+}
+
+.modal-body .wpb_wrapper ul {
+  padding-left: 20px;
+}
+
+.modal-body .wpb_wrapper ul li {
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quotes-page .banner-four {
+    padding: 30px 0;
+  }
+
+  .quotes-list {
+    padding: 20px 15px;
+  }
+
+  .quotes-list .rounded img {
+    max-width: 120px;
+  }
+
+  .quotes-list .box-heading {
+    font-size: 12px;
+  }
+
+  .quotes-list .limit {
+    font-size: 16px;
+  }
+
+  .important_links ul.links_list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-dialog {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+}
+

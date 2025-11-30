@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const HealthInsurance = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,6 +25,8 @@ const HealthInsurance = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    // Navigate to health insurance quotes page with form data
+    navigate('/health-insurance-quotes', { state: formData });
   };
 
   const whyChoose = [

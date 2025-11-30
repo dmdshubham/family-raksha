@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const InvestmentPlans = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,6 +25,8 @@ const InvestmentPlans = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    // Navigate to investment plans quotes page with form data
+    navigate('/investment-plans-quotes', { state: formData });
   };
 
   const advantages = [
