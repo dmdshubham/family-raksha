@@ -1,53 +1,11 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './TermInsuranceQuotes.css';
+import { termInsuranceQuotes } from '../../dummyData';
 
 const TermInsuranceQuotes = () => {
   const location = useLocation();
   const formData = location.state || {};
-
-  // Mock data - replace with actual API call
-  const quotes = [
-    {
-      id: 1,
-      partnerLogo: '/assets/images/partners/bajaj.svg',
-      title: 'Bajaj Allianz Life eTouch',
-      lifeCover: '₹50 Lakhs',
-      coverageTill: '65 Years',
-      claimSettled: 98.03,
-      insurerLink: 'https://www.bajajallianzlife.com',
-      knowYourPlan: '<h4>Know Your Plan</h4><p>Bajaj Allianz Life eTouch is a pure term insurance plan that provides comprehensive life cover at affordable premiums.</p>',
-      inbuiltBenefit: '<h4>Inbuilt Benefits</h4><ul><li>Terminal Illness Benefit</li><li>Accidental Death Benefit</li></ul>',
-      riderBenefit: '<h4>Rider Benefits</h4><ul><li>Accidental Total & Permanent Disability Rider</li><li>Critical Illness Rider</li></ul>',
-      planBrochure: 'https://www.bajajallianzlife.com/content/dam/bagicgov/life-insurance-online/term-insurance-plans/etouch/brochure.pdf'
-    },
-    {
-      id: 2,
-      partnerLogo: '/assets/images/partners/care.svg',
-      title: 'Care Life Term Plan',
-      lifeCover: '₹1 Crore',
-      coverageTill: '70 Years',
-      claimSettled: 97.5,
-      insurerLink: 'https://www.careinsurance.com',
-      knowYourPlan: '<h4>Know Your Plan</h4><p>Care Life Term Plan offers high coverage with flexible premium payment options.</p>',
-      inbuiltBenefit: '<h4>Inbuilt Benefits</h4><ul><li>Life Coverage</li><li>Income Benefit Option</li></ul>',
-      riderBenefit: '<h4>Rider Benefits</h4><ul><li>Accidental Death Benefit</li><li>Waiver of Premium</li></ul>',
-      planBrochure: '#'
-    },
-    {
-      id: 3,
-      partnerLogo: '/assets/images/partners/star.svg',
-      title: 'Star Life Smart Protect',
-      lifeCover: '₹75 Lakhs',
-      coverageTill: '75 Years',
-      claimSettled: 96.8,
-      insurerLink: 'https://www.starhealth.in',
-      knowYourPlan: '<h4>Know Your Plan</h4><p>Star Life Smart Protect provides comprehensive life protection with tax benefits.</p>',
-      inbuiltBenefit: '<h4>Inbuilt Benefits</h4><ul><li>Death Benefit</li><li>Maturity Benefit Option</li></ul>',
-      riderBenefit: '<h4>Rider Benefits</h4><ul><li>Critical Illness Rider</li><li>Premium Waiver Rider</li></ul>',
-      planBrochure: '#'
-    }
-  ];
 
   const [modalData, setModalData] = useState(null);
 
@@ -85,7 +43,7 @@ const TermInsuranceQuotes = () => {
             </div>
             <div className="col-xl-8 col-md-8 policy-listing">
               <div className="dlab-content">
-                {quotes.map((quote, index) => (
+                {termInsuranceQuotes.map((quote, index) => (
                   <div key={quote.id} className="quotes-list">
                     <div className="row align-items-center mb-10">
                       <div className="col-md-3 col-lg-3 col-xl-3 text-center">
@@ -108,11 +66,11 @@ const TermInsuranceQuotes = () => {
                         <span className="box-heading">Claim settled</span>
                         <span className="limit">{quote.claimSettled}%</span>
                       </div>
-                      <div className="col-md-3 col-lg-3 col-xl-3 text-center">
+                    {quote?.insurerLink &&  <div className="col-md-3 col-lg-3 col-xl-3 text-center">
                         <a className="btn btn-primary gradient" href={quote.insurerLink} target="_blank" rel="noopener noreferrer">
                           CHECK YOUR PREMIUM
                         </a>
-                      </div>
+                      </div>}
                     </div>
                     <div className="row important_links_section">
                       <div className="col-md-6 col-lg-6 col-xl-6 p-0">

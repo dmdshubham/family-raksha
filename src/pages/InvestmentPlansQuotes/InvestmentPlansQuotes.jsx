@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import '../TermInsuranceQuotes/TermInsuranceQuotes.css';
+import { investmentPlansQuotes } from '../../dummyData';
 
 const InvestmentPlansQuotes = () => {
   const location = useLocation();
@@ -62,7 +63,7 @@ const InvestmentPlansQuotes = () => {
             </div>
             <div className="col-xl-8 col-md-8 policy-listing">
               <div className="dlab-content">
-                {quotes.map((quote) => (
+                {investmentPlansQuotes.map((quote) => (
                   <div key={quote.id} className="quotes-list">
                     <div className="row align-items-center mb-10">
                       <div className="col-md-3 col-lg-3 col-xl-3 text-center">

@@ -215,7 +215,7 @@ table td:first-child {
 .quotes-nav ul li{text-align: left !important;}
 .form-control{height: 45px !important;}
 .quotes-page .modal.show{z-index: 9999;}
-.quotes-page .side-bar{z-index: 1;}
+.quotes-page .side-bar{z-index: 0;}
 .quotes-page .sticky-top{top: 20px !important}
 .search-no-results input.search-field {
        padding: 10px 10px 10px 20px;

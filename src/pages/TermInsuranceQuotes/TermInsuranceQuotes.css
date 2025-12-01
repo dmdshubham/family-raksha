@@ -92,9 +92,9 @@
 }
 
 .quotes-list .rounded img {
-  max-width: 150px;
+  max-width: 95px;
   height: auto;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .quotes-list .policy-detail .name {
@@ -102,7 +102,7 @@
   font-weight: 700;
   color: #666;
   font-size: 15px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .quotes-list .box-heading {
@@ -141,8 +141,9 @@
 }
 
 .important_links_section {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 10px;
+  /* padding-top: 20px; */
+  padding-left: 20px;
   border-top: 1px dashed #ddd;
 }
 
@@ -235,6 +236,49 @@
 
 .modal-body .wpb_wrapper ul li {
   margin-bottom: 8px;
+}
+
+.modal-body .wpb_wrapper h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.modal-body .wpb_wrapper .plan-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.modal-body .wpb_wrapper .plan-feature .checkmark {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.modal-body .wpb_wrapper .plan-feature div {
+  flex: 1;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.modal-body .wpb_wrapper .plan-feature strong {
+  color: #000;
+  font-weight: 600;
 }
 
 /* Responsive */

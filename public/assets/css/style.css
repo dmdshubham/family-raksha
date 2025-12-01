@@ -4837,7 +4837,7 @@ textarea.form-control-lg {
 .sticky-top {
   position: sticky;
   top: 0;
-  z-index: 1020; }
+ }
 
 @media (min-width: 576px) {
   .sticky-sm-top {
@@ -9411,7 +9411,7 @@ button.scroltop {
   width: 100%; }
 
 .sticky-top {
-  top: 120px; }
+  top: 20px; }
 
 .page-title {
   padding: 65px 0px 45px;
