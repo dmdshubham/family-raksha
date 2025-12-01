@@ -8,13 +8,33 @@ const Home = () => {
       new WOW().init();
     }
 
-    // Initialize counter
-    if (typeof $ !== 'undefined' && $.fn.counterUp) {
-      $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-      });
-    }
+    // Initialize counter with a slight delay to ensure DOM is ready
+    const initCounter = () => {
+      if (typeof $ !== 'undefined' && typeof jQuery !== 'undefined') {
+        // Check if counterUp plugin is loaded
+        if ($.fn.counterUp) {
+          // Destroy any existing counter instances first
+          $('.counter').each(function() {
+            $(this).removeData('counterup-nums');
+          });
+          
+          // Initialize counter
+          $('.counter').counterUp({
+            delay: 10,
+            time: 3000
+          });
+        }
+      }
+    };
+
+    // Use setTimeout to ensure scripts are fully loaded
+    const timer = setTimeout(() => {
+      initCounter();
+    }, 100);
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -469,7 +489,7 @@ const Home = () => {
                 <img src="/assets/images/partners/helth.svg" alt="Health" />
               </div>
             </div>
-            <div className="col-lg-2 col-md-3 col-sm-4 col-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+            {/* <div className="col-lg-2 col-md-3 col-sm-4 col-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
               <div className="clients-logo">
                 <img src="/assets/images/partners/manipal.svg" alt="Manipal" />
               </div>
@@ -478,7 +498,7 @@ const Home = () => {
               <div className="clients-logo">
                 <img src="/assets/images/partners/star.svg" alt="Star" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

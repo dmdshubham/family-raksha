@@ -82,6 +82,7 @@ const Footer = () => {
               <div className="col-xl-3 col-lg-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
                 <h5 className="footer-title">ABOUT US</h5>
                 <p>Welcome to FamilyRaksha.com, your one-stop destination for all your insurance needs. We are a leading insurance web aggregator, specializing in providing comprehensive and tailor-made insurance solutions to protect you and your family's future.</p>
+                <p>Registration No. 030, Registration Code No. IRDAI/INT/WBA/79/2023 Dated 07/02/2024, Valid till 06/02/2027</p>
               </div>
 
               <div className="col-xl-3 col-lg-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
