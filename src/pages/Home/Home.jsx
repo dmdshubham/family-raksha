@@ -386,7 +386,7 @@ const Home = () => {
       <section className="content-inner-1 testimonials-section" style={{ backgroundImage: 'url(/assets/images/bg10.webp)' }}>
         <div className="container">
           <div className="section-head style-4 text-center">
-            <h6 className="sub-title">Testimonial</h6>
+            <h6 className="sub-title text-white">Testimonial</h6>
             <h2 className="title">What Our Clients Say&apos;s</h2>
           </div>
           <div className="row">
@@ -484,11 +484,11 @@ const Home = () => {
                 <img src="/assets/images/partners/bajaj.svg" alt="Bajaj" />
               </div>
             </div>
-            <div className="col-lg-2 col-md-3 col-sm-4 col-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+            {/* <div className="col-lg-2 col-md-3 col-sm-4 col-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
               <div className="clients-logo">
                 <img src="/assets/images/partners/helth.svg" alt="Health" />
               </div>
-            </div>
+            </div> */}
             {/* <div className="col-lg-2 col-md-3 col-sm-4 col-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
               <div className="clients-logo">
                 <img src="/assets/images/partners/manipal.svg" alt="Manipal" />
