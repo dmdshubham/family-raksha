@@ -126,6 +126,7 @@ const Footer = () => {
                     <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                     <li><Link to="/terms-conditions">Terms & Conditions</Link></li>
                     <li><Link to="/grievance-redressal">Grievance Redressal</Link></li>
+                    <li><Link to="https://covertiger.com/" target="_blank" rel="noopener noreferrer">Our Brands - CoverTiger.com</Link></li>
                   </ul>
                 </div>
               </div>
